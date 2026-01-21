@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DaaS.Application\Daas.Application.csproj" />
+    <ProjectReference Include="..\DaaS.Application\Daas.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
