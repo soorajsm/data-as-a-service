@@ -21,4 +21,11 @@ public class UsersController : ControllerBase
         var users = await _mediator.Send(new GetUsersQuery());
         return Ok(users);
     }
+    [Route("/akash")]
+    [HttpGet]
+    public Task<Dummy> dummy()
+    {
+       var dummies = _mediator.Send(new GetDummyQuery());
+       return dummies;
+    }
 }
